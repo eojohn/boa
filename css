@@ -1,0 +1,159 @@
+
+@font-face{
+  font-family:montserrat;
+
+  src:url(../font/Montserrat.ttf);
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin:0 auto;
+  font-family: 'montserrat';
+}
+body{
+    background-color: #f0f0f0;
+        overflow-x: hidden; 
+}
+.intro {
+  width: 100%;
+  display: block;
+  height: 100vh;
+  position: relative;
+  background-image: url(../img/background.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#nav ul {
+
+list-style: none;
+   text-align: center;
+   display: inline;
+margin-top:50px;
+text-align: center;
+}
+li {
+float:right;   
+margin:20px 10px 0;
+}
+#nav a{
+  color:#fff;
+}
+#nav li a {
+ color: #fff;
+ text-transform: uppercase;
+ font-family: 'Work sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 4px;
+    padding: 8px;
+  text-decoration: none;
+  }
+#nav a:hover{
+  color:#00AEEF;
+  transition: color .3s ease;
+
+}
+
+
+ .fund-us{
+  display: inline;
+border:2px #fff solid;   padding:20px;
+ }
+ .fund-us:hover{
+  background-color:#fff;
+  color:#000;
+ }
+ .title{
+  font-size:50px;
+   text-transform: uppercase;
+color:#fff;
+display: block;
+margin-top: 158px;
+text-align: center;
+    letter-spacing: 4px;
+ }
+.logo{
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+  display: block;
+  margin:0 auto;
+}
+.slogan{
+  font-size:20px;
+  text-align: center;
+  color: #00AEEF;
+  font-weight: 300;
+ }
+.white{
+  color:#fff;
+}
+.pulse {
+  -webkit-animation: pulse 2s linear infinite;
+  -moz-animation: pulse 2s linear infinite;
+  -ms-animation: pulse 2s linear infinite;
+  animation: pulse 2s linear infinite;
+}
+@keyframes "pulse" {
+ 0% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+ }
+ 50% {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+ }
+ 100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+ }
+
+}
+
+@-moz-keyframes pulse {/*For Firefox*/
+ 0% {
+   -moz-transform: scale(1;
+   transform: scale(1);
+ }
+ 50% {
+   -moz-transform: scale(0.8);
+   transform: scale(0.8);
+ }
+ 100% {
+   -moz-transform: scale(1);
+   transform: scale(1);
+ }
+
+}
+
+@-webkit-keyframes "pulse" { /*For Chrome*/
+ 0% {
+   -webkit-transform: scale(1);
+   transform: scale(1);
+ }
+ 50% {
+   -webkit-transform: scale(0.8);
+   transform: scale(0.8);
+ }
+ 100% {
+   -webkit-transform: scale(1);
+   transform: scale(1);
+ }
+
+}
+
+
+
+ 
+
+
+ 
