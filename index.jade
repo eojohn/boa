@@ -1,0 +1,55 @@
+doctype html
+html(lang='en')
+  head
+    // Title of Site
+    title Boa | Blood Pressure Made Easy
+    // Meta
+    meta(charset='UTF-8')
+    meta(name='description', content='Boa allows you to track your blood pressure.')
+    meta(property='og:title', content='Boa')
+    meta(property='og:description', content='Boa allows you to track your blood pressure.')
+    meta(name='keywords', content='Boa, Blood Pressure, Blood, Tracking Blood Pressure, Wristband, Blood Pressure Tracking')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    // Favicon
+    link(rel='icon', href='favicon.ico')
+    // StyleSheet
+    link(rel='stylesheet', href='css/style.css')
+  body
+    logo  
+    // Navigation Starts Here
+    #nav
+      ul
+        li
+          a.fund-us(href='#intro') Buy Now
+        li
+          a(href='#') Contact Us
+        li
+          a(href='services.html') Features
+        li
+          a(href='services.html') Our Story
+        li
+          a(href='contactus.html') Intro
+    // Navigation Ends Here
+    // Intro Starts Here
+    intro#intro.intro
+      h1 Hey
+    // Intro Ends Here
+    // Problem
+    problem
+    // Problem Ends Here
+    // How Boa Solves The Problem
+    solution
+    // How Boa Solves The Problem Ends Here
+    // Contact Section
+    contact
+    // Contact Section Ends Here
+  script(type='text/javascript').
+    var express = require('express')
+    var app = module.exports = express.createServer();
+    app.configure(function(){
+    app.set('views', __dirname + '/views');
+    app.set('view engine', 'jade');
+    });
+    app.get('/', function(){
+    res.render('index', {option: 'value'});
+    });
